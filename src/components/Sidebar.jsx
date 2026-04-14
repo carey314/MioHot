@@ -1,7 +1,8 @@
 import { NavLink } from 'react-router-dom';
 
 const navItems = [
-  { path: '/', icon: '📅', label: '内容日历' },
+  { path: '/', icon: '🏠', label: 'Dashboard', end: true },
+  { path: '/calendar', icon: '📅', label: '内容日历' },
   { path: '/copywriting', icon: '📝', label: '文案库' },
   { path: '/strategy', icon: '📊', label: '平台策略' },
   { path: '/execution', icon: '🎯', label: '执行计划' },
@@ -39,6 +40,7 @@ const Sidebar = () => {
           <NavLink
             key={item.path}
             to={item.path}
+            end={item.end || false}
             className={({ isActive }) =>
               `flex items-center gap-3 py-2.5 text-sm transition-all duration-200 no-underline${isActive ? ' sidebar-active' : ''}`
             }
