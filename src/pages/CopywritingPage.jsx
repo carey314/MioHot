@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { copywritingData, ammoLibrary, platformColors, angleLabels, angleColors } from '../data/data';
 
-const allPlatforms = ['全部', 'Twitter', '小红书', 'V2EX', '掘金', '即刻'];
+const allPlatforms = ['全部', 'Twitter', '小红书', 'V2EX', '掘金', '即刻', '抖音', '版本更新'];
 const allAngles = ['全部', 'A', 'B', 'C', 'D', 'E', 'F'];
 
 const getPlatformStyle = (platform) => {
