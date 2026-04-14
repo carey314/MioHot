@@ -1,0 +1,8 @@
+/MioHot/index.html
+  Cache-Control: no-cache, no-store, must-revalidate
+
+/MioHot/
+  Cache-Control: no-cache, no-store, must-revalidate
+
+/*.html
+  Cache-Control: no-cache, no-store, must-revalidate
