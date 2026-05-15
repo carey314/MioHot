@@ -9,6 +9,7 @@ import ExecutionPage from './pages/ExecutionPage';
 import TrackingPage from './pages/TrackingPage';
 import KolPage from './pages/KolPage';
 import ChangelogPage from './pages/ChangelogPage';
+import PromoVisualsPage from './pages/PromoVisualsPage';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/execution" element={<ExecutionPage />} />
           <Route path="/tracking" element={<TrackingPage />} />
           <Route path="/kol" element={<KolPage />} />
+          <Route path="/promo" element={<PromoVisualsPage />} />
           <Route path="/changelog" element={<ChangelogPage />} />
         </Routes>
       </main>

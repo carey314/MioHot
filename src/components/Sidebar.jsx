@@ -8,6 +8,7 @@ const navItems = [
   { path: '/execution', icon: '🎯', label: '执行计划' },
   { path: '/tracking', icon: '📈', label: '数据追踪' },
   { path: '/kol', icon: '🤝', label: 'KOL合作' },
+  { path: '/promo', icon: '🎨', label: '推广素材' },
   { path: '/changelog', icon: '📋', label: '版本更新' },
 ];
 
