@@ -175,6 +175,7 @@ const DashboardPage = () => {
           { code: 'D', name: '使用场景', example: '做饭时审批了 Claude 的请求', color: '#ff3b30' },
           { code: 'E', name: '幕后/共鸣', example: '一个人做了两个 App', color: '#af52de' },
           { code: 'F', name: '隐性对比', example: '别的灵动岛只能看，这个能操控', color: '#1d1d1f' },
+          { code: 'G', name: '上架活动', example: 'App Store 上架 + 推广换码 14 天', color: '#f59e0b' },
         ].map((angle, i) => (
           <div
             key={angle.code}

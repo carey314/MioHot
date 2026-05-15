@@ -21,6 +21,7 @@ export const angleLabels = {
   D: '使用场景',
   E: '幕后故事',
   F: '隐性对比',
+  G: '上架活动',
 };
 
 export const angleColors = {
@@ -30,6 +31,7 @@ export const angleColors = {
   D: { bg: 'rgba(163, 230, 53, 0.15)', text: '#a3e635' },
   E: { bg: 'rgba(251, 146, 60, 0.15)', text: '#fb923c' },
   F: { bg: 'rgba(192, 132, 252, 0.15)', text: '#c084fc' },
+  G: { bg: 'rgba(245, 158, 11, 0.15)', text: '#f59e0b' },
 };
 
 // ============================================================
@@ -6629,6 +6631,724 @@ Mac 到 iPhone 的通信全程加密。
 截图美化：「像素猫展示页面，每只猫放在独立卡片中，卡片带圆角和淡色边框，标注物种名和稀有度星级，背景深色，整体排列整齐美观」
 
 #像素猫 #Mac灵动岛 #办公室趣事 #MioIsland #同事日常`,
+  },
+
+  // ============================================================
+  // 角度 G · 上架活动（25 条）
+  // 主题：App Store 上架庆祝 / 推广换码活动 / MioIsland 3.0.0 升级提醒
+  // ============================================================
+
+  // ---------- Twitter 英文 (5 条) ----------
+  {
+    id: 'tw-g-1',
+    platform: 'Twitter',
+    angle: 'G',
+    title: 'App Store 上架',
+    content: `Code Light is live on the App Store.
+
+Took a year. Built it solo. Mac + iPhone + Server, all three pieces talking to each other.
+
+If you use Claude Code on a Mac and have an iPhone, give it 3 days. Free trial, no card needed.
+
+apps.apple.com/app/code-light/id6761744871`,
+  },
+  {
+    id: 'tw-g-2',
+    platform: 'Twitter',
+    angle: 'G',
+    title: 'Share for redeem 英文版',
+    content: `Code Light just shipped on the App Store. I'm not running ads. Doing this instead:
+
+🖼 Post a screenshot + your real take → 10-day redeem code
+🎬 Post a 30s+ video using it → 30-day redeem code
+
+DM me the link. Code Light is free for 3 days out of the box, codes stack on top.
+
+⚠️ Mac MioIsland must be on 3.0.0+ for redeems to work.`,
+  },
+  {
+    id: 'tw-g-3',
+    platform: 'Twitter',
+    angle: 'G',
+    title: 'MioIsland 3.0 上线原因',
+    content: `Shipped MioIsland 3.0.0 today, which is required for App Store redeem codes to work.
+
+Why? The server needs an X-Client-Version header to route the new redeem flow. Old clients don't send it, so the redeem just... silently fails on the old path.
+
+Fix: github.com/MioMioOS/MioIsland. Pull, rebuild, redeem works.`,
+  },
+  {
+    id: 'tw-g-4',
+    platform: 'Twitter',
+    angle: 'G',
+    title: '三组件 ready',
+    content: `Code Light ships as 3 things, all required:
+
+📱 Code Light — iPhone app (App Store)
+🖥️ MioIsland — Mac menubar bridge (open source)
+☁️ CodeLight Server — zero-knowledge relay (self-host or use ours)
+
+All three are live now. The iPhone one took the longest because Apple review is its own boss fight.`,
+  },
+  {
+    id: 'tw-g-5',
+    platform: 'Twitter',
+    angle: 'G',
+    title: '3 天免费试用 hook',
+    content: `3 days free. No card. Open Code Light → start trial → pair Mac → done.
+
+Day 1: notice your iPhone tells you what Claude is doing
+Day 2: reply to Claude from the subway
+Day 3: forget it's even an app, it just lives in your Dynamic Island
+
+If that hooks you, redeem codes or lifetime are the path forward.`,
+  },
+
+  // ---------- 小红书 (5 条) ----------
+  {
+    id: 'xhs-g-1',
+    platform: '小红书',
+    angle: 'G',
+    title: '📱 上架日记',
+    content: `📱 我的 app 终于上架 App Store 了！
+
+一个人做了一整年的小工具——Code Light，让 Claude Code 在 Mac 和 iPhone 之间实时同步。
+
+🐱 Mac 刘海里住着一只像素猫，盯着 Claude 写代码
+📲 iPhone 灵动岛同步显示当前状态
+☕ 离开电脑也能"陪着" Claude
+
+苹果审核来回 7 次，今天终于过了。
+
+打开 App 就送 3 天免费试用，搜「Code Light」就能下载~
+
+#独立开发 #ClaudeCode #AI编程 #灵动岛 #Mac效率 #App上架`,
+  },
+  {
+    id: 'xhs-g-2',
+    platform: '小红书',
+    angle: 'G',
+    title: '🎁 推广换长期试用',
+    content: `🎁 帮我推一下 Code Light，免费送你长期试用码
+
+刚上架不久，不投广告，靠你的真实使用感受拉新。规则超简单：
+
+🖼 图文推广 → 10 天兑换码
+朋友圈/小红书/微博/即刻/Threads 任一公开账号发图文，带 Code Light 的截图 + 你自己的话
+
+🎬 视频推广 → 30 天兑换码
+30 秒以上，要有实际画面或讲解
+
+发完链接 / 截图私信我，我立刻发码~
+
+⚠️ 兑换前请把 Mac 端 MioIsland 升级到 3.0.0+
+
+#独立开发 #推广活动 #ClaudeCode #试用福利`,
+  },
+  {
+    id: 'xhs-g-3',
+    platform: '小红书',
+    angle: 'G',
+    title: '⚠️ 兑换码用不了怎么办',
+    content: `⚠️ 兑换码失败 90% 是这个原因
+
+最近经常被问"我领了 Code Light 兑换码但用不了"——
+
+90% 的情况都是：Mac 端 MioIsland 版本太旧。
+
+解决方案：
+1. 打开 github.com/MioMioOS/MioIsland
+2. 下载最新 3.0.0+ 版本
+3. 替换旧的 MioIsland
+4. 重新打开 Code Light → 设置 → 兑换码 → 重新输入
+
+如果还不行，私信我，加你 case 排查。
+
+#ClaudeCode #兑换码 #排错 #独立开发`,
+  },
+  {
+    id: 'xhs-g-4',
+    platform: '小红书',
+    angle: 'G',
+    title: '🐱 像素猫上 App Store',
+    content: `🐱 我刘海里的像素猫，从本地搬到了 App Store
+
+一年前画的第一只像素猫，是为了让 Claude 不那么冷冰冰——
+- Claude 思考时，猫"想"的姿势
+- Claude 干活时，猫"打字"的姿势
+- Claude 等批准时，猫举手
+- Claude 干完了，猫胜利
+
+现在它跟着 Code Light 上架了 App Store，可以陪你看 AI 写代码~
+
+打开 App Store 搜「Code Light」就能领养它（3 天免费试用）
+
+#像素猫 #App上架 #独立开发 #手绘像素 #Mac灵动岛`,
+  },
+  {
+    id: 'xhs-g-5',
+    platform: '小红书',
+    angle: 'G',
+    title: '☕ 这个 App 适合谁',
+    content: `☕ Code Light 这个 App，适合什么样的你？
+
+🎯 用 Claude Code 写代码的程序员（必选）
+🎯 经常跑长任务、不想被电脑"拴住"
+🎯 通勤路上想看一眼 AI 干到哪了
+🎯 做饭/出差/会议时不想错过 Claude 的提问
+
+不适合：
+❌ 不用 Claude Code
+❌ 没有 Mac 或不打算装 MioIsland 桥接
+❌ 想要"全自动 AI 编程"（这是给你"陪着"AI 的）
+
+3 天免费试用，不喜欢直接卸载，零承诺。
+
+#ClaudeCode #程序员 #AI编程 #独立开发`,
+  },
+
+  // ---------- 即刻 (5 条) ----------
+  {
+    id: 'jike-g-1',
+    platform: '即刻',
+    angle: 'G',
+    title: '上架感言',
+    content: `Code Light 终于上架 App Store 了。
+
+一个人写了一年，Mac + iPhone + Server 三端协同。审核来回 7 轮，今天过了。
+
+打开 App 即送 3 天免费试用，无需绑卡。搜「Code Light」就能下。
+
+不投广告，靠你们真实使用 + 真实反馈。喜欢就帮我推一下，我送你长期试用码（图文 10 天 / 视频 30 天）。
+
+#独立开发 #ClaudeCode #App上架`,
+  },
+  {
+    id: 'jike-g-2',
+    platform: '即刻',
+    angle: 'G',
+    title: '推广换码邀请',
+    content: `搞了一个朴素的推广活动——
+
+帮我在朋友圈/小红书/微博/即刻发一条 Code Light 的图文（带你自己使用感受）→ 我送你 10 天兑换码
+发一条 30 秒以上的视频 → 30 天兑换码
+跨平台可以叠加，图文 + 视频 = 40 天
+
+私信我链接，审核通过立刻发码。⚠️ 兑换前请把 Mac 端 MioIsland 升级到 3.0.0+，旧版会失败。
+
+额度有限，开放 14 天（5/14 - 5/28）。`,
+  },
+  {
+    id: 'jike-g-3',
+    platform: '即刻',
+    angle: 'G',
+    title: '三组件 ready',
+    content: `Code Light 是一套三组件系统，全部 ready 了：
+
+📱 Code Light（iPhone App Store）— iOS 17+
+🖥️ MioIsland（Mac 端 menubar app）— macOS 14+，github.com/MioMioOS/MioIsland
+☁️ CodeLight Server（中继）— code.7ove.online，也可自托管
+
+三个都装齐才能用，缺一不可。
+
+Mac 端必须 3.0.0+，因为协议升级了，老版本兑换码会失败。`,
+  },
+  {
+    id: 'jike-g-4',
+    platform: '即刻',
+    angle: 'G',
+    title: 'MioIsland 3.0 协议升级',
+    content: `MioIsland 3.0 上线，主要变化是协议升级。
+
+服务器开始要求每个客户端请求带 X-Client-Version header，3.0.0 是第一个发这个 header 的版本。为啥要这么搞？因为以后做风控、做订阅识别、做兑换码新流程，都需要按版本路由。
+
+老用户兑换码失败基本都是这个原因——旧版不带 header，服务器把请求路由到老流程，redeem 接口对不上。
+
+修复办法：拉最新 3.0.0+，rebuild 一下就好。`,
+  },
+  {
+    id: 'jike-g-5',
+    platform: '即刻',
+    angle: 'G',
+    title: '一个人做完三端的小复盘',
+    content: `一个人做完 Mac + iPhone + Server 三端，复盘一下时间分配：
+
+🖥️ Mac (MioIsland) — 4 个月，Swift + AppKit，主要踩 macOS 权限和 cmux 集成
+📱 iPhone (Code Light) — 5 个月，SwiftUI + ActivityKit，灵动岛 + Live Activity 占了一半时间
+☁️ Server — 2 个月，Fastify + Socket.io + Prisma，配对 + 加密 + APNs HTTP/2 推送
+🎨 像素猫设计 + 文档 + 上架材料 — 1 个月
+
+App Store 审核来回 7 轮，最后一轮过了。
+
+最大的教训：iOS Live Activity 的 APNs 必须走 HTTP/2，Node 自带 fetch 走 HTTP/1.1 直接 TypeError，连个清晰报错都没有。`,
+  },
+
+  // ---------- V2EX (5 条) ----------
+  {
+    id: 'v2ex-g-1',
+    platform: 'V2EX',
+    angle: 'G',
+    title: '[分享创造] Code Light 上 App Store',
+    content: `[分享创造] Code Light — Claude Code 的 iPhone 伴侣，灵动岛 + 多 Mac 配对 + 精准 cmux 路由
+
+一个人做了一年的小工具，今天上 App Store 了。
+
+简单介绍：
+- iPhone App，配 Mac 端的 MioIsland 用，让你从手机看/回 Claude Code 会话
+- 灵动岛真支持（ActivityKit Live Activity，不是推送通知）
+- 一个 iPhone 配多台 Mac，永久 6 位短码
+- 精准 cmux 终端定位（通过 session UUID → PID → 环境变量送达指定 pane）
+- 所有 Claude 斜杠命令都能从手机发（pane 快照 diff 把输出回显回来）
+- E2E 加密 + 零知识中继，服务器看不到内容
+
+三端协同：
+- iPhone：apps.apple.com/app/code-light/id6761744871
+- Mac：github.com/MioMioOS/MioIsland（必装 3.0.0+）
+- Server：code.7ove.online（也可自托管 github.com/MioMioOS/MioServer）
+
+License: CC BY-NC 4.0，仅限个人学习研究，禁商用。
+
+欢迎提 Bug 提 PR，源码 github.com/MioMioOS/CodeLight。`,
+  },
+  {
+    id: 'v2ex-g-2',
+    platform: 'V2EX',
+    angle: 'G',
+    title: 'MioIsland 3.0 协议升级技术细节',
+    content: `MioIsland 3.0 主版本升级，分享一下协议层做的事
+
+背景：Code Light 上 App Store 之后引入了订阅 + 兑换码流程，需要按客户端版本走不同的服务端路径
+
+3.0 的变更：
+1. 每个请求带 X-Client-Version header（之前不带，服务端没法区分新老客户端）
+2. 兑换码流程从旧的 /v1/redeem 改成 /v2/redeem，新接口需要 header 才能路由
+3. 错误返回带 client_version_too_old 错误码，App 端识别后弹升级提示
+4. APNs Live Activity 推送强制 HTTP/2（Node 自带 fetch 走 1.1，会 silent fail）
+
+老用户兑换码失败 90% 是没升级 3.0。
+
+下载：github.com/MioMioOS/MioIsland/releases
+
+License: CC BY-NC 4.0`,
+  },
+  {
+    id: 'v2ex-g-3',
+    platform: 'V2EX',
+    angle: 'G',
+    title: '免费试用 + 兑换码活动',
+    content: `Code Light 上架 App Store，分享一下试用规则
+
+- 打开 App 即送 3 天免费试用，无需绑卡
+- 试用期内功能完整解锁
+- 到期后：① Lifetime 一次性买断 ② 兑换码续期
+
+不想花钱也行，最近有个推广换码活动（5/14 - 5/28）：
+- 朋友圈/小红书/微博/即刻 任一公开账号发图文 → 10 天兑换码
+- 抖音/B站/YouTube 等公开账号发 30s+ 视频 → 30 天兑换码
+
+⚠️ 兑换码必须 Mac MioIsland 3.0.0+ 才能用
+
+参与方式：发完后链接私信 Carey（项目 GitHub 找到联系方式）
+
+不打算薅羊毛的朋友也欢迎纯试用，3 天足够看清楚适不适合自己。`,
+  },
+  {
+    id: 'v2ex-g-4',
+    platform: 'V2EX',
+    angle: 'G',
+    title: 'iOS Live Activity APNs HTTP/2 强制',
+    content: `iOS Live Activity 推送踩坑分享 — APNs HTTP/2 强制
+
+背景：Code Light 用 ActivityKit Live Activity 在 iPhone 灵动岛/锁屏显示 Claude 状态，需要服务端通过 APNs 推送更新。
+
+最坑的地方：Live Activity 推送必须走 HTTP/2，Node 自带的 fetch() 默认走 HTTP/1.1，打 api.push.apple.com 直接 TypeError: fetch failed，连个 4xx/5xx 错误都不返回。
+
+解法：用 node:http2 手搓 HTTP/2 客户端
+
+\`\`\`ts
+import http2 from 'node:http2'
+const client = http2.connect('https://api.push.apple.com')
+const req = client.request({
+  ':method': 'POST',
+  ':path': \`/3/device/\${deviceToken}\`,
+  'apns-topic': bundleId + '.push-type.liveactivity',
+  'apns-push-type': 'liveactivity',
+  'authorization': \`bearer \${jwt}\`,
+})
+req.end(JSON.stringify(payload))
+\`\`\`
+
+普通 APNs alert 通知用 fetch() 还行，只有 Live Activity 这一种强制 HTTP/2。
+
+Apple 官方文档藏得很深，调试 3 天才找到。
+
+源码：github.com/MioMioOS/MioServer`,
+  },
+  {
+    id: 'v2ex-g-5',
+    platform: 'V2EX',
+    angle: 'G',
+    title: '自托管 vs 公共 server',
+    content: `Code Light 服务端：自托管 vs 用我们的公共 server 怎么选？
+
+我们运营的公共 server：code.7ove.online
+- 零知识中继（只存密文，看不到代码 / 对话 / 文件名）
+- 默认接入，零配置
+- 全球访问，香港 + 北美双区
+
+自托管：github.com/MioMioOS/MioServer
+- Fastify + Socket.io + PostgreSQL + Prisma
+- 部署门槛：装 Node 20+ + PG 14+ + 配 TLS
+- 适合：极度敏感数据 / 内网部署 / 企业场景
+
+技术上没区别，密钥都在客户端（CryptoKit Ed25519），不论用哪个服务端都看不到明文。
+
+选择建议：个人开发者用公共，公司用自托管。
+
+我自己平时用公共的，源码全公开（包括 server），可审计。`,
+  },
+
+  // ---------- 掘金 (5 条) ----------
+  {
+    id: 'juejin-g-1',
+    platform: '掘金',
+    angle: 'G',
+    title: 'Code Light 上架 App Store 全栈复盘',
+    content: `Code Light 上架 App Store — 一个独立开发者的全栈复盘
+
+# 是什么
+
+Code Light 是一个让 Claude Code 在 Mac 和 iPhone 之间实时同步的工具：
+- Mac 上的 Claude Code 在跑 → iPhone 灵动岛实时显示状态
+- iPhone 上点一下批准 → Mac 上的 Claude 继续干
+- 完整支持斜杠命令、图片附件、远程新建会话
+
+# 技术栈
+
+| 端 | 技术 | 难点 |
+|---|---|---|
+| iPhone (Code Light) | SwiftUI + ActivityKit + CryptoKit | Live Activity 强制 HTTP/2 / 多 Mac 切换状态机 |
+| Mac (MioIsland) | Swift + AppKit + Socket.io | cmux 集成 / NSPasteboard 粘图 / 60s echo 去重环 |
+| Server | Fastify + Socket.io + Prisma + Postgres | DeviceLink 权限图 / APNs HTTP/2 推送 / 零知识中继 |
+
+# 关键决策
+
+1. **协议在 server 端定义，但密钥永远在客户端** — server 看不到任何明文
+2. **iOS 端用 ActivityKit Live Activity，不用推送通知** — 持续显示状态，不是"叮"一下就消失
+3. **cmux 终端路由通过环境变量精确匹配** — session UUID → PID → CMUX_SURFACE_ID
+4. **图片走独立 blob 接口** — 不塞 base64 进消息体，节省 33% 流量
+5. **三端开源** — License CC BY-NC 4.0，个人学习研究免费
+
+# 数据
+
+- 仓库：github.com/MioMioOS/CodeLight ⭐ 270+
+- App Store：apps.apple.com/app/code-light/id6761744871
+- 上架时间：2026-04-13
+- 当前版本：iOS 2.0.0 / MioIsland 3.0.0
+
+# 试用
+
+打开 App 即送 3 天免费试用，无需绑卡。
+
+接下来几篇会拆解三端的具体技术实现，欢迎关注。`,
+  },
+  {
+    id: 'juejin-g-2',
+    platform: '掘金',
+    angle: 'G',
+    title: 'iOS Live Activity APNs HTTP/2 推送实战',
+    content: `iOS Live Activity 推送踩坑实录 — 为什么必须走 HTTP/2
+
+# 背景
+
+Code Light 在灵动岛 + 锁屏显示 Claude Code 的实时状态，需要 Node.js 服务端通过 APNs 推送更新。
+
+普通推送通知（NotificationContent）走 fetch() 就行，Live Activity 推送必须走 HTTP/2。
+
+# 翻车现场
+
+\`\`\`ts
+// 这段代码看起来完全没问题
+const resp = await fetch('https://api.push.apple.com/3/device/' + token, {
+  method: 'POST',
+  headers: {
+    'apns-topic': bundleId + '.push-type.liveactivity',
+    'apns-push-type': 'liveactivity',
+    'authorization': 'bearer ' + jwt,
+  },
+  body: JSON.stringify(payload),
+})
+// 结果：TypeError: fetch failed
+// 连个 4xx/5xx 状态码都没有
+\`\`\`
+
+调试 3 天才意识到：Node 18+ 的 fetch() 走 HTTP/1.1，而 APNs Live Activity 端点**只接受 HTTP/2**。
+
+# 正确做法 — node:http2
+
+\`\`\`ts
+import http2 from 'node:http2'
+
+const client = http2.connect('https://api.push.apple.com')
+const req = client.request({
+  ':method': 'POST',
+  ':path': \`/3/device/\${deviceToken}\`,
+  'apns-topic': \`\${bundleId}.push-type.liveactivity\`,
+  'apns-push-type': 'liveactivity',
+  'authorization': \`bearer \${jwt}\`,
+})
+
+let body = ''
+req.on('data', chunk => body += chunk)
+req.on('end', () => {
+  console.log('done', body)
+  client.close()
+})
+
+req.end(JSON.stringify({
+  aps: {
+    timestamp: Math.floor(Date.now() / 1000),
+    event: 'update',
+    'content-state': contentState,
+  },
+}))
+\`\`\`
+
+# 教训
+
+1. APNs 文档没明说"Live Activity 必须 HTTP/2"，调试时这条线索容易漏
+2. Node fetch() 错误处理对非 HTTP 错误极不友好
+3. http2.connect() 每次创建客户端有成本，生产建议复用连接池
+
+源码：github.com/MioMioOS/MioServer`,
+  },
+  {
+    id: 'juejin-g-3',
+    platform: '掘金',
+    angle: 'G',
+    title: 'NSPasteboard + AppleScript 粘图 hack',
+    content: `用 NSPasteboard + AppleScript 把图片粘到 cmux 终端
+
+# 问题
+
+Code Light 让 iPhone 给 Mac 的 Claude Code 终端发图片（比如截图报错让 Claude 看）。问题是 cmux（终端复用器）**没有"粘图"命令**。
+
+但是用户用 Cmd+V 手动粘是能粘的。
+
+# 解法 — 模拟 Cmd+V
+
+\`\`\`swift
+// 1. 把 cmux 切到前台
+shell("/usr/local/bin/cmux", "focus-panel", "--surface", surfaceId)
+
+// 2. AppleScript activate cmux
+let script = """
+tell application "cmux" to activate
+"""
+NSAppleScript(source: script)?.executeAndReturnError(nil)
+
+// 3. 轮询确认 cmux 真的上前台了
+while NSWorkspace.shared.frontmostApplication?.bundleIdentifier != "io.cmux.app" {
+  try await Task.sleep(nanoseconds: 50_000_000) // 50ms
+}
+
+// 4. 写 NSPasteboard（多格式最大化兼容）
+let pasteboard = NSPasteboard.general
+pasteboard.clearContents()
+pasteboard.setData(jpegData, forType: .init("public.jpeg"))
+pasteboard.setData(tiffData, forType: .tiff)
+pasteboard.writeObjects([nsImage])
+
+// 5. 模拟 Cmd+V
+let cmdV = """
+tell application "System Events" to keystroke "v" using {command down}
+"""
+NSAppleScript(source: cmdV)?.executeAndReturnError(nil)
+\`\`\`
+
+# 坑
+
+1. 必须**等 cmux 真的 frontmost** 再粘，否则粘到当前焦点应用（比如你的 IDE）
+2. 写 NSPasteboard 要写**三种格式**：NSImage / public.jpeg / .tiff，cmux 内部按啥读不确定
+3. AppleScript keystroke 需要**辅助功能权限**，且权限按签名路径授予 —— 所以 MioIsland 每次 rebuild 必须**自安装到 /Applications/MioIsland.app**，否则路径变了权限就掉了
+
+# fallback — CGEvent
+
+如果用户拒绝辅助功能权限，AppleScript keystroke 会静默失败。这时降级用 CGEvent：
+
+\`\`\`swift
+let src = CGEventSource(stateID: .hidSystemState)
+let cmdVDown = CGEvent(keyboardEventSource: src, virtualKey: 0x09, keyDown: true)!
+cmdVDown.flags = .maskCommand
+cmdVDown.post(tap: .cghidEventTap)
+\`\`\`
+
+# 源码
+
+github.com/MioMioOS/MioIsland，关键文件 \`Sources/Paste/ImagePaster.swift\``,
+  },
+  {
+    id: 'juejin-g-4',
+    platform: '掘金',
+    angle: 'G',
+    title: 'X-Client-Version 协议升级 = 拒绝旧客户端',
+    content: `服务端按客户端版本路由 — Code Light 3.0 协议升级实战
+
+# 为什么要这么搞
+
+Code Light 上 App Store 后引入了订阅 + 兑换码体系。新流程对应新接口，但老版本客户端（MioIsland < 3.0）还在调老接口。
+
+需求：让服务端知道每个请求是从哪个版本客户端发来的，按版本分发流程。
+
+# 方案 — 强制 header
+
+每个客户端请求都带：
+
+\`\`\`
+X-Client-Version: 3.0.0
+X-Client-Platform: macos
+X-Client-Build: 421
+\`\`\`
+
+服务端中间件：
+
+\`\`\`ts
+fastify.addHook('preHandler', async (req, reply) => {
+  const version = req.headers['x-client-version']
+  if (!version) {
+    return reply.code(400).send({
+      error: 'client_version_missing',
+      message: 'Please upgrade MioIsland to 3.0.0+',
+    })
+  }
+  const [major] = version.split('.').map(Number)
+  if (major < 3) {
+    return reply.code(426).send({
+      error: 'client_version_too_old',
+      required: '3.0.0',
+      current: version,
+    })
+  }
+  req.clientVersion = version
+})
+\`\`\`
+
+# 兑换码新接口
+
+老接口 \`/v1/redeem\` 仅返回 200 / 400，没法表达"需要升级"。新接口 \`/v2/redeem\` 接收 X-Client-Version 后做版本检查 + 路由：
+
+\`\`\`ts
+fastify.post('/v2/redeem', async (req, reply) => {
+  if (req.clientVersion.startsWith('3.')) {
+    return handleNewRedeem(req, reply)  // 新流程
+  }
+  return reply.code(426).send({ error: 'client_version_too_old' })
+})
+\`\`\`
+
+# 客户端识别 + 弹升级
+
+\`\`\`swift
+if let err = response.errorCode, err == "client_version_too_old" {
+  showAlert(
+    title: "需要升级 MioIsland",
+    message: "兑换码功能需要 MioIsland 3.0.0+",
+    primary: "前往下载",
+    action: { NSWorkspace.shared.open(URL(string: "https://github.com/MioMioOS/MioIsland/releases")!) }
+  )
+}
+\`\`\`
+
+# 教训
+
+1. 协议升级前**必须设计好向后不兼容的失败路径**，否则用户看到"兑换码无效"会以为是码的问题
+2. HTTP 426 Upgrade Required 是为这种场景设计的，正经用上一次
+3. 上架日和服务端 deploy 必须**精确同步**，否则老 App 配新 server / 新 App 配老 server 都会 break
+
+源码：github.com/MioMioOS/MioServer`,
+  },
+  {
+    id: 'juejin-g-5',
+    platform: '掘金',
+    angle: 'G',
+    title: '60 秒 echo 去重环 — 解决一个真实工程问题',
+    content: `60 秒 echo 去重环 — Code Light 解决双向同步的一个真实问题
+
+# 问题描述
+
+Code Light 让 iPhone 向 Mac 的 cmux 终端发消息，流程是：
+
+\`\`\`
+iPhone 发 → Server → Mac (MioIsland) → cmux 粘贴
+                                       ↓
+                                   Claude 写 JSONL
+                                       ↓
+                          MioIsland 的 JSONL 监听器看到"新用户消息"
+                                       ↓
+                                MioIsland 重新上传给 Server
+                                       ↓
+                          iPhone 收到自己刚发的消息（重复！）
+\`\`\`
+
+这是个经典的 echo 问题。
+
+# 错误的解决思路
+
+❌ 让 server 端去重：server 看不到明文（零知识），区分不了
+❌ 用 localId 做端到端协商：增加协议复杂度，新增字段
+❌ Mac 端 paste 后忽略 N 秒的 JSONL 变更：粗暴，会丢真正的用户输入
+
+# 正确的解决 — Mac 端 60 秒 TTL 环
+
+MioIsland 维护一个 60 秒 TTL 的 \`(claudeUuid, text)\` 集合：
+
+\`\`\`swift
+actor EchoSuppressor {
+  private var seen: [String: Date] = [:]  // hash(uuid + text) → 时间戳
+
+  // iPhone 发来消息时，paste 前先记一下
+  func remember(uuid: String, text: String) {
+    let key = "\\(uuid):\\(text.prefix(200))"
+    seen[key] = Date()
+    cleanupExpired()
+  }
+
+  // JSONL 监听器看到用户消息时，check 是否要跳过
+  func shouldSkip(uuid: String, text: String) -> Bool {
+    let key = "\\(uuid):\\(text.prefix(200))"
+    guard let ts = seen[key] else { return false }
+    if Date().timeIntervalSince(ts) > 60 { return false }
+    seen.removeValue(forKey: key)  // 消费一次就移除
+    return true
+  }
+
+  private func cleanupExpired() {
+    let cutoff = Date().addingTimeInterval(-60)
+    seen = seen.filter { _, ts in ts > cutoff }
+  }
+}
+\`\`\`
+
+# 为什么 60 秒
+
+- 太短（<10s）：Claude 写 JSONL 有延迟，可能错过
+- 太长（>5min）：内存会涨，且可能误杀真正的重复输入
+
+60 秒是经验值，覆盖了 99.9% 的延迟，没遇到过 false positive。
+
+# 为什么用 text prefix 200 字符做 key
+
+- 整段 text hash 会因为换行/空格差异 false negative
+- prefix 200 已经足够区分两次不同的输入
+- 同一段长输入截前 200 字几乎不会冲突
+
+# 教训
+
+1. 双向同步问题不要在协议层解决，**找单边能解决的最简方案**
+2. TTL + 消费模式比"持久化去重表"轻得多
+3. 大多数 echo 问题都有一个"自然时间窗"，找到它
+
+源码：github.com/MioMioOS/MioIsland，关键文件 \`Sources/Sync/EchoSuppressor.swift\``,
   },
 ];
 
